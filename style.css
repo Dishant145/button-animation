@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #131617;
+  }
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  button{
+    position: relative;
+    display: block;
+    color: white;
+    background: none;
+    font-size: 14px;
+    font-family: "montserrat";
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #d42424;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    z-index: 1;
+    cursor: pointer;
+    overflow: hidden;
+    outline: 0;
+    transition: 1s all ease;
+
+  }
+  .btn1::before{
+    background: #d42424;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+  
+  .btn1:hover::before{
+    top: 0;
+  }
+
+  .btn2::before{
+    background: #d42424;
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+  
+
+  .btn2:hover::before{
+    bottom: 0;
+  }
+
+  
+  .btn3::before{
+    background: #d42424;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+  
+
+  .btn3:hover::before{
+    left: 0;
+  }
+
+
+  .btn4::before{
+    background: #d42424;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    top: 0;
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+  
+
+  .btn4:hover::before{
+    right: 0;
+  }
+
+
+  
+  
